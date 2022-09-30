@@ -2,3 +2,11 @@ $colorLight: #fff;
 $colorDark: #000;
 
 $font-open-sans: "Open Sans", sans-serif;
+
+$medium-size: 768px;
+$large-size: 992px;
+
+$breakpoints: (
+  "medium": $medium-size,
+  "large": $large-size,
+);
