@@ -6,13 +6,170 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href="/assets/images/favicon-picsum-32x32.png"
+      href="/assets/images/picsum-icon.svg"
       sizes="any"
     />
     <link rel="stylesheet" href="assets/styles/styles.css" />
+    <!-- <base href="https://picsum.photos" target="_blank" /> -->
     <title></title>
   </head>
   <body>
-    <h1 class="title">Hello world!</h1>
+    <header class="hero section">
+      <section class="container">
+        <div class="hero__branding spacing--small">
+          <img
+            src="/assets/images/picsum-icon.svg"
+            alt="Picsum icon"
+            class="brand-icon"
+          />
+          <h1>Lorem Picsum</h1>
+        </div>
+        <h2 class="title--small spacing--small">The Lorem Ipsum for photos.</h2>
+        <img
+          src="https://picsum.photos/536/354"
+          alt="Random photo from picsum.photos"
+          class="elevation"
+        />
+      </section>
+    </header>
+    <main>
+      <!-- Easy to use -->
+      <section class="easy-to-use section section--accent">
+        <div class="container">
+          <h2 class="text--large">Easy to use, stylish placeholders</h2>
+          <p>
+            Just add your desired image size (width & height) after our URL, and
+            you'll get a random image.
+          </p>
+          <pre>
+            <code><a href="#">https://some-url.com</a></code>
+          </pre>
+          <p>To get square image, just add the size</p>
+          <pre>
+            <code><a href="#">https://some-url.com</a></code>
+          </pre>
+        </div>
+      </section>
+      <!-- Specific Image -->
+      <section id="specific-image" class="section">
+        <div class="container">
+          <h2>Specific Image</h2>
+          <p>
+            Get a specific image by adding <code>/id/{image}</code> to the start
+            of the url.
+          </p>
+          <pre>
+            <code><a href="#">https://some-url.com</a></code>
+          </pre>
+          <p>You can find a list all the images <a href="#">here.</a></p>
+          <img
+            src="https://picsum.photos/id/237/536/354"
+            alt="Dark puppy"
+            class="elevation"
+          />
+        </div>
+      </section>
+      <!-- Static Random Image -->
+      <section id="static-random-image" class="section">
+        <div class="container">
+          <h2>Static Random Image</h2>
+          <p>
+            Get the same random image every time based on a seed, by adding
+            <code>/seed/{seed}</code> to the start of the url.
+          </p>
+          <pre>
+            <code><a href="#">https://some-url.com</a></code>
+          </pre>
+          <img
+            src="https://picsum.photos/seed/picsum/536/354"
+            alt="Snow-capped hills"
+            class="elevation"
+          />
+        </div>
+      </section>
+      <!-- Grayscale -->
+      <section id="grayscale" class="section">
+        <div class="container">
+          <h2>Grayscale</h2>
+          <p>
+            Get a grayscale image by appending <code>?grayscale</code> to the
+            end of the url.
+          </p>
+          <pre>
+            <code><a href="#">https://some-url.com</a></code>
+          </pre>
+          <img
+            src="https://picsum.photos/id/1084/536/354?grayscale"
+            alt="Walrus grayscale image"
+            class="elevation"
+          />
+        </div>
+      </section>
+      <!-- Blur -->
+      <section id="blur" class="section">
+        <div class="container">
+          <h2>Blur</h2>
+          <p>Get a blurred image by appending ?blur to the end of the url.</p>
+          <pre>
+            <code><a href="#">https://some-url.com</a></code>
+          </pre>
+          <p>
+            You can adjust the amount of blur by providing a number between
+            <code>1</code> and <code>10</code>.
+          </p>
+          <pre>
+            <code><a href="#">https://some-url.com</a></code>
+          </pre>
+          <img
+            src="https://picsum.photos/id/1060/536/354?blur=2"
+            alt="Cafeteria"
+            class="elevation"
+          />
+        </div>
+      </section>
+      <!-- Advanced Usage -->
+      <section class="section">
+        <div class="container">
+          <h2>Advanced Usage</h2>
+          <p>
+            You may combine any of the options above. For example, to get a
+            specific image that is grayscale and blurred.
+          </p>
+          <pre>
+            <code><a href="#">https://some-url.com</a></code>
+          </pre>
+          <p>
+            To request multiple images of the same size in your browser, add the
+            <code>random</code> query param to prevent the images from being
+            cached:
+          </p>
+          <pre>
+            <code>Some https query arguments</code>
+          </pre>
+          <p>
+            If you need a file ending, you can add <code>.jpg</code> to the end
+            of the url.
+          </p>
+          <pre>
+            <code><a href="#">https://some-url.com</a></code>
+          </pre>
+          <p>
+            To get an image in the WebP format, you can add
+            <code>.webp</code> to the end of the url.
+          </p>
+          <pre>
+            <code><a href="#">https://some-url.com</a></code>
+          </pre>
+          <img
+            src="https://picsum.photos/id/870/536/354?grayscale&blur=2"
+            alt="Beacon"
+            class="elevation"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer section">
+      <p>Created by <a href="https://github.com/daguttt">@daguttt</a></p>
+    </footer>
   </body>
 </html>

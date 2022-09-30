@@ -1,0 +1,15 @@
+@use "../modules/variables" as v;
+
+.footer {
+  color: v.$footer-text-color;
+  background-color: v.$color-dark;
+  text-align: center;
+
+  a {
+    color: v.$footer-link-color;
+
+    &:hover {
+      color: v.$footer-text-color;
+    }
+  }
+}
