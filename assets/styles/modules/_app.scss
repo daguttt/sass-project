@@ -8,7 +8,7 @@
   padding: 1rem;
 
   @include m.media("medium") {
-    padding: 0.5rem;
+    max-width: v.$medium-size;
   }
 
   @include m.media("large") {
