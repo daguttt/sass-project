@@ -115,12 +115,11 @@ html {
   text-align: center;
 }
 .hero__branding {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;
 }
 .hero__branding img {
+  place-self: center;
   width: 42px;
   height: 42px;
 }

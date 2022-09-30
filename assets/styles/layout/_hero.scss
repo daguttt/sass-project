@@ -4,11 +4,10 @@
   text-align: center;
 
   &__branding {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
     img {
+      place-self: center;
       width: 42px;
       height: 42px;
     }
