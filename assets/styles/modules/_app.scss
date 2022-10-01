@@ -13,17 +13,16 @@
 
   @include m.media("large") {
     max-width: v.$large-size;
-    padding: 0;
   }
 }
 
 .grid {
   @extend %grid;
   gap: 64px;
-}
 
-.order-2 {
-  order: 2;
+  @include m.media("large") {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .section {
