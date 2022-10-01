@@ -8,3 +8,12 @@
     }
   }
 }
+
+@include m.media("large") {
+  .static-random-image,
+  .blur {
+    .content {
+      order: 2;
+    }
+  }
+}

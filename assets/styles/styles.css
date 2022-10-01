@@ -39,7 +39,7 @@ p {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .container {
@@ -55,16 +55,16 @@ p {
 @media (min-width: 992px) {
   .container {
     max-width: 992px;
-    padding: 0;
   }
 }
 
 .grid {
   gap: 64px;
 }
-
-.order-2 {
-  order: 2;
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .section {
@@ -168,6 +168,12 @@ html {
   }
 }
 
+@media (min-width: 992px) {
+  .static-random-image .content,
+.blur .content {
+    order: 2;
+  }
+}
 .footer {
   color: hsla(0deg, 100%, 100%, 0.6);
   background-color: #000;
