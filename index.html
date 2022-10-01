@@ -23,8 +23,10 @@
             class="brand-icon"
           />
           <h1>Lorem Picsum</h1>
+          <h2 class="title--small spacing--small">
+            The Lorem Ipsum for photos.
+          </h2>
         </div>
-        <h2 class="title--small spacing--small">The Lorem Ipsum for photos.</h2>
         <img
           src="https://picsum.photos/536/354"
           alt="Random photo from picsum.photos"
@@ -52,16 +54,18 @@
       </section>
       <!-- Specific Image -->
       <section id="specific-image" class="section">
-        <div class="container">
-          <h2>Specific Image</h2>
-          <p>
-            Get a specific image by adding <code>/id/{image}</code> to the start
-            of the url.
-          </p>
-          <pre>
-            <code><a href="#">https://some-url.com</a></code>
-          </pre>
-          <p>You can find a list all the images <a href="#">here.</a></p>
+        <div class="container grid">
+          <div class="content">
+            <h2>Specific Image</h2>
+            <p>
+              Get a specific image by adding <code>/id/{image}</code> to the
+              start of the url.
+            </p>
+            <pre>
+              <code><a href="#">https://some-url.com</a></code>
+            </pre>
+            <p>You can find a list all the images <a href="#">here.</a></p>
+          </div>
           <img
             src="https://picsum.photos/id/237/536/354"
             alt="Dark puppy"
@@ -71,15 +75,17 @@
       </section>
       <!-- Static Random Image -->
       <section id="static-random-image" class="section">
-        <div class="container">
-          <h2>Static Random Image</h2>
-          <p>
-            Get the same random image every time based on a seed, by adding
-            <code>/seed/{seed}</code> to the start of the url.
-          </p>
-          <pre>
+        <div class="container grid">
+          <div class="content order-2">
+            <h2>Static Random Image</h2>
+            <p>
+              Get the same random image every time based on a seed, by adding
+              <code>/seed/{seed}</code> to the start of the url.
+            </p>
+            <pre>
             <code><a href="#">https://some-url.com</a></code>
           </pre>
+          </div>
           <img
             src="https://picsum.photos/seed/picsum/536/354"
             alt="Snow-capped hills"
@@ -89,15 +95,17 @@
       </section>
       <!-- Grayscale -->
       <section id="grayscale" class="section">
-        <div class="container">
-          <h2>Grayscale</h2>
-          <p>
-            Get a grayscale image by appending <code>?grayscale</code> to the
-            end of the url.
-          </p>
-          <pre>
+        <div class="container grid">
+          <div class="content">
+            <h2>Grayscale</h2>
+            <p>
+              Get a grayscale image by appending <code>?grayscale</code> to the
+              end of the url.
+            </p>
+            <pre>
             <code><a href="#">https://some-url.com</a></code>
           </pre>
+          </div>
           <img
             src="https://picsum.photos/id/1084/536/354?grayscale"
             alt="Walrus grayscale image"
@@ -107,19 +115,21 @@
       </section>
       <!-- Blur -->
       <section id="blur" class="section">
-        <div class="container">
-          <h2>Blur</h2>
-          <p>Get a blurred image by appending ?blur to the end of the url.</p>
-          <pre>
+        <div class="container grid">
+          <div class="content order-2">
+            <h2>Blur</h2>
+            <p>Get a blurred image by appending ?blur to the end of the url.</p>
+            <pre>
             <code><a href="#">https://some-url.com</a></code>
           </pre>
-          <p>
-            You can adjust the amount of blur by providing a number between
-            <code>1</code> and <code>10</code>.
-          </p>
-          <pre>
+            <p>
+              You can adjust the amount of blur by providing a number between
+              <code>1</code> and <code>10</code>.
+            </p>
+            <pre>
             <code><a href="#">https://some-url.com</a></code>
           </pre>
+          </div>
           <img
             src="https://picsum.photos/id/1060/536/354?blur=2"
             alt="Cafeteria"
@@ -129,37 +139,40 @@
       </section>
       <!-- Advanced Usage -->
       <section class="section">
-        <div class="container">
-          <h2>Advanced Usage</h2>
-          <p>
-            You may combine any of the options above. For example, to get a
-            specific image that is grayscale and blurred.
-          </p>
-          <pre>
+        <div class="container grid">
+          <div class="content">
+            <h2>Advanced Usage</h2>
+            <p>
+              You may combine any of the options above. For example, to get a
+              specific image that is grayscale and blurred.
+            </p>
+            <pre>
             <code><a href="#">https://some-url.com</a></code>
           </pre>
-          <p>
-            To request multiple images of the same size in your browser, add the
-            <code>random</code> query param to prevent the images from being
-            cached:
-          </p>
-          <pre>
+            <p>
+              To request multiple images of the same size in your browser, add
+              the
+              <code>random</code> query param to prevent the images from being
+              cached:
+            </p>
+            <pre>
             <code>Some https query arguments</code>
           </pre>
-          <p>
-            If you need a file ending, you can add <code>.jpg</code> to the end
-            of the url.
-          </p>
-          <pre>
+            <p>
+              If you need a file ending, you can add <code>.jpg</code> to the
+              end of the url.
+            </p>
+            <pre>
             <code><a href="#">https://some-url.com</a></code>
           </pre>
-          <p>
-            To get an image in the WebP format, you can add
-            <code>.webp</code> to the end of the url.
-          </p>
-          <pre>
+            <p>
+              To get an image in the WebP format, you can add
+              <code>.webp</code> to the end of the url.
+            </p>
+            <pre>
             <code><a href="#">https://some-url.com</a></code>
           </pre>
+          </div>
           <img
             src="https://picsum.photos/id/870/536/354?grayscale&blur=2"
             alt="Beacon"
